@@ -12,3 +12,5 @@ elif grade >= 70:
     print('You earned a C')
 elif grade >= 60:
     print('You earned a D')
+else:
+    print('You earned an NC')
