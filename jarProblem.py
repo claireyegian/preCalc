@@ -2,6 +2,7 @@
 #4/23/18
 #jarProblem.py - calculates fair costs for different strategies of jar game
 
+#Strategy 1: Guess red
 N = int(input('Enter the number of marbles: '))
 W = int(input('Enter the monetary prize: '))
 
@@ -11,4 +12,4 @@ while subtractN <= N:
     sumValues += (((N - subtractN)/N)*W)
     subtractN += 1
 
-print(sumValues/(N + 1))
+print('The game will cost',sumValues/(N + 1),'to play')
