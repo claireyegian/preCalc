@@ -11,4 +11,4 @@ while subtractN <= N:
     sumNvalues += (N - subtractN)
     subtractN += 1
 
-print(sumNvalues)
+print(sumNvalues/(N + 1))
