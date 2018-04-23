@@ -12,4 +12,5 @@ while subtractN <= N:
     sumValues += (((N - subtractN)/N)*W)
     subtractN += 1
 
-print('The game will cost',sumValues/(N + 1),'to play')
+print('The game will cost',sumValues/(N + 1),'dollars to play if you guess red')
+print('The game will cost',sumValues/(N + 1),'dollars to play if you guess green')
