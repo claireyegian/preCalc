@@ -6,9 +6,9 @@ N = int(input('Enter the number of marbles: '))
 W = int(input('Enter the monetary prize: '))
 
 subtractN = 0
-sumNvalues = 0
+sumValues = 0
 while subtractN <= N:
-    sumNvalues += (N - subtractN)
+    sumValues += (((N - subtractN)/N)*W)
     subtractN += 1
 
-print(sumNvalues/(N + 1))
+print(sumValues/(N + 1))
