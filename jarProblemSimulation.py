@@ -35,10 +35,11 @@ while runs <= 50:
     pick = randint(0,N-1)
     marblePicked = marbleList[pick]
     
-    wins = 0
-    if guess == marblePicked:
-        wins += 1
+    print(marblePicked)
     
+    wins = 0
+    if guess != marblePicked:
+        wins += 1
     runs += 1
 
 print(wins)
