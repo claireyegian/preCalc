@@ -33,3 +33,5 @@ while runs <= 50:
     wins = 0
     if guess == marblePicked:
         wins += 1
+    
+    runs += 1
