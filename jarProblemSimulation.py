@@ -36,3 +36,5 @@ while runs <= 50:
         wins += 1
     
     runs += 1
+
+print(wins)
