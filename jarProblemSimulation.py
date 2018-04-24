@@ -4,15 +4,16 @@
 
 from random import randint
 
+guess = input('Enter your guess (red or green): ')
+if guess == 'red':
+    guess = 1
+elif guess == 'green':
+    guess = 2
+N = int(input('Enter the number of marbles: '))
+W = int(input('Enter the monetary prize: '))
+
 runs = 0
 while runs <= 50:
-    guess = input('Enter your guess (red or green): ')
-    if guess == 'red':
-        guess = 1
-    elif guess == 'green':
-        guess = 2
-    N = int(input('Enter the number of marbles: '))
-    W = int(input('Enter the monetary prize: '))
     red = randint(1,N)
     green = N - red
     
