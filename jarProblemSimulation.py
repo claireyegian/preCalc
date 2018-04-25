@@ -64,7 +64,7 @@ while runs1 <= 100:
     pick2 = randint(0,N-1)
     marblePicked1 = marbleList1[pick2]
     
-    if pick1 == pick2:
+    if guess1 == marblePicked1:
         wins1 += 1
     
     runs1 += 1
