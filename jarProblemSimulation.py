@@ -4,7 +4,7 @@
 
 from random import randint
 
-guess = input('Enter your guess (red or green): ')
+"""guess = input('Enter your guess (red or green): ')
 if guess == 'red':
     guess = 1
 elif guess == 'green':
@@ -36,4 +36,34 @@ while runs <= 1000:
         wins += 1
     runs += 1
 
-print(wins)
+print(wins)""""
+
+
+wins1 = 0
+runs1 = 0
+while runs1 <= 100:
+    red1 = randint(0,N)
+    green1 = N - red1
+      
+    marbleList1 = []
+    item1 = 0
+    while item1 < green1:
+        marbleList1.append(2)
+        item1 += 1
+        
+    item3 = 0
+    while item3 < red1:
+        marbleList1.append(1)
+        item3 += 1
+        
+    pick1 = randint(0,N-1)
+    guess1 = marbleList1[pick]
+    
+    pick2 = randint(0,N-1)
+    marblePicked1 = marbleList1[pick2]
+    
+    if pick1 = pick2:
+        wins1 += 1
+    
+    runs1 += 1
+print(wins1)
