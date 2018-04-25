@@ -36,7 +36,7 @@ while runs <= 1000:
         wins += 1
     runs += 1
 
-print(wins)""""
+print(wins)"""
 
 
 wins1 = 0
@@ -62,7 +62,7 @@ while runs1 <= 100:
     pick2 = randint(0,N-1)
     marblePicked1 = marbleList1[pick2]
     
-    if pick1 = pick2:
+    if pick1 == pick2:
         wins1 += 1
     
     runs1 += 1
