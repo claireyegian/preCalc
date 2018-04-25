@@ -4,36 +4,30 @@
 
 from random import randint
 
-"""guess = input('Enter your guess (red or green): ')
+guess = input('Enter your guess (red or green): ')
 if guess == 'red':
     guess = 1
 elif guess == 'green':
     guess = 2
 N = int(input('Enter the number of marbles: '))
-W = int(input('Enter the monetary prize: '))"""
-
-guess = 1
-N = 20
-W = 20
+W = int(input('Enter the monetary prize: '))
 
 runs = 0
 wins = 0
 while runs <= 1000:
     red = randint(0,N)
     green = N - red
-    print(red,green)
     
     marbleList = []
     item = 0
-    while item <= green:
+    while item < green:
         marbleList.append(2)
         item += 1
     
     item2 = 0
-    while item2 <= red:
+    while item2 < red:
         marbleList.append(1)
         item2 += 1
-    print(len(marbleList))
     
     pick = randint(0,N-1)
     marblePicked = marbleList[pick]
