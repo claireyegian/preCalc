@@ -12,26 +12,28 @@ elif guess == 'green':
 N = int(input('Enter the number of marbles: '))
 W = int(input('Enter the monetary prize: '))"""
 
-guess = 2
+guess = 1
 N = 20
 W = 20
 
 runs = 0
 wins = 0
 while runs <= 1000:
-    green = randint(0,N)
-    red = N - green
+    red = randint(0,N)
+    green = N - red
+    print(red,green)
     
     marbleList = []
     item = 0
-    while item <= red:
-        marbleList.append(1)
+    while item <= green:
+        marbleList.append(2)
         item += 1
     
     item2 = 0
-    while item2 <= green:
-        marbleList.append(2)
+    while item2 <= red:
+        marbleList.append(1)
         item2 += 1
+    print(len(marbleList))
     
     pick = randint(0,N-1)
     marblePicked = marbleList[pick]
