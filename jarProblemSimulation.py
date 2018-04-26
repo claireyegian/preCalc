@@ -58,11 +58,8 @@ while runs1 <= 1000:
         marbleList1.append(1)
         item3 += 1
     
-    pick1 = randint(0,N-1)
-    guess1 = marbleList1[pick1]
-    
-    pick2 = randint(0,N-1)
-    marblePicked1 = marbleList1[pick2]
+    guess1 = marbleList1[randint(0,N-1)]
+    marblePicked1 = marbleList1[randint(0,N-1)]
     
     if guess1 == marblePicked1:
         wins1 += 1
