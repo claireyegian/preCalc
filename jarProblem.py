@@ -14,3 +14,13 @@ while subtractN <= N:
 
 print('The game will cost',sumValues/(N + 1),'dollars to play if you guess red')
 print('The game will cost',sumValues/(N + 1),'dollars to play if you guess green')
+
+D = sumValues/(N + 1)
+
+Nsubtract = 0
+sumNValues = 0
+while Nsubtract < N:
+    sumNValues += ((N - Nsubtract)/N)
+    Nsubtract += 1
+
+print((.5*sumNValues)W)
