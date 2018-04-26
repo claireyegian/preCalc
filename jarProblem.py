@@ -6,7 +6,7 @@
 N = int(input('Enter the number of marbles: '))
 W = int(input('Enter the monetary prize: '))
 
-subtractN = 0
+"""subtractN = 0
 sumValues = 0
 while subtractN <= N:
     sumValues += (((N - subtractN)/N)*W)
@@ -23,4 +23,12 @@ while Nsubtract < N:
     sumNValues += ((N - Nsubtract)/N)
     Nsubtract += 1
 
-print((.5*sumNValues)W)
+print((sumNValues/N)*W)"""
+
+Nsubtract1 = 0
+sumProbability = 0
+while Nsubtract1 < N:
+    sumProbability += ((Nsubtract1/N)^2 + (((Nsubtract1/N)^2)*(N - Nsubtract1)/N))
+    Nsubtract1 += 1
+
+print(sumProbability)
