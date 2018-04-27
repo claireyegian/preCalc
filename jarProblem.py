@@ -15,20 +15,26 @@ while subtractN <= N:
 print('The game will cost',sumValues/(N + 1),'dollars to play if you guess red')
 print('The game will cost',sumValues/(N + 1),'dollars to play if you guess green')
 
-D = sumValues/(N + 1)
+D = sumValues/(N + 1)"""
 
-Nsubtract = 0
-sumNValues = 0
-while Nsubtract < N:
-    sumNValues += ((N - Nsubtract)/N)
-    Nsubtract += 1
+sumprobred = 0
+sumprobgreen = 0
+runs = 1
+while runs <= 100:
+    red = randint(0,N)
+    green = N - red
+    sumprobred += (red/N)
+    sumprobgreen += (green/N)
+    runs += 1
+avprobred = sumprobred/100
+avprobgreen = sumprobgreen/100
 
-print((sumNValues/N)*W)"""
+print(((sumprobred/100)^2 + (sumprobgreen/100)^2)*W)
 
-Nsubtract1 = 0
+"""Nsubtract1 = 0
 sumProbability = 0
 while Nsubtract1 < N:
     sumProbability += ((Nsubtract1/N)^2 + (((Nsubtract1/N)^2)*(N - Nsubtract1)/N))
     Nsubtract1 += 1
 
-print(sumProbability)
+print(sumProbability)"""
