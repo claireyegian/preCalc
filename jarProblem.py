@@ -1,42 +1,71 @@
 #Claire Yegian and Lea Adams-Blackmore
-#4/23/18
-#jarProblem.py - calculates fair costs for different strategies of jar game
+#4/24/18
+#jarProblemSimulation.py - simulations to test jar problem answers
 
 from random import randint
 
-#Strategy 1: Guess red
+"""guess = input('Enter your guess (red or green): ')
+if guess == 'red':
+    guess = 1
+elif guess == 'green':
+    guess = 2
 N = int(input('Enter the number of marbles: '))
 W = int(input('Enter the monetary prize: '))
 
-"""subtractN = 0
-sumValues = 0
-while subtractN <= N:
-    sumValues += (((N - subtractN)/N)*W)
-    subtractN += 1
-
-print('The game will cost',sumValues/(N + 1),'dollars to play if you guess red')
-print('The game will cost',sumValues/(N + 1),'dollars to play if you guess green')
-
-D = sumValues/(N + 1)"""
-
-sumprobred = 0
-sumprobgreen = 0
-runs = 1
-while runs <= 100:
+runs = 0
+wins = 0
+while runs <= 1000:
     red = randint(0,N)
     green = N - red
-    sumprobred += (red/N)
-    sumprobgreen += (green/N)
+    
+    marbleList = []
+    item = 0
+    while item < green:
+        marbleList.append(2)
+        item += 1
+    
+    item2 = 0
+    while item2 < red:
+        marbleList.append(1)
+        item2 += 1
+    
+    pick = randint(0,N-1)
+    marblePicked = marbleList[pick]
+    
+    if guess == marblePicked:
+        wins += 1
     runs += 1
-avprobred = sumprobred/100
-avprobgreen = sumprobgreen/100
 
-print(((sumprobred/100)^2 + (sumprobgreen/100)^2)*W)
+print(wins)"""
 
-"""Nsubtract1 = 0
-sumProbability = 0
-while Nsubtract1 < N:
-    sumProbability += ((Nsubtract1/N)^2 + (((Nsubtract1/N)^2)*(N - Nsubtract1)/N))
-    Nsubtract1 += 1
 
-print(sumProbability)"""
+N = 20
+W = 10
+wins1 = 0
+runs1 = 0
+while runs1 <= 100:
+    red1 = randint(0,N)
+    green1 = N - red1
+    
+    marbleList1 = []
+    item1 = 0
+    while item1 < green1:
+        marbleList1.append(2)
+        item1 += 1
+        
+    item3 = 0
+    while item3 < red1:
+        marbleList1.append(1)
+        item3 += 1
+    print(marbleList1, len(marbleList1))
+    
+    guess1 = marbleList1[randint(0,N-1)]
+    marblePicked1 = marbleList1[randint(0,N-1)]
+    
+    if guess1 == marblePicked1:
+        wins1 += 1
+    print(guess1, marblePicked1)
+    print(wins1)
+
+    runs1 += 1
+print(wins1)
