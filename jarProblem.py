@@ -30,13 +30,15 @@ sumprobgreen = 0
 red = randint(0,N)
 green = N - red
 Rruns = 0
+Rsubtract = 0
 Gruns = 0
+Gsubtract = 0
 while Rruns < red:
-    sumprobred += (red/N)
+    sumprobred += ((red - Rsubtract)/N)
     Rruns += 1
 
 while Gruns < green:
-    sumprobgreen += (green/N)
+    sumprobgreen += ((green - Gsubtract)/N)
     Gruns += 1
 
 print(((sumprobred)**2 + (sumprobgreen)**2))
