@@ -25,7 +25,7 @@ while Nsubtract < N:
     Nsubtract += 1
 print((sumNValues/N)*W)"""
 
-N = 5
+N = 10
 W = 10
 sumprobred = 0
 sumprobgreen = 0
@@ -34,16 +34,17 @@ Rsubtract = 0
 Gruns = 0
 Gsubtract = 0
 while Rruns < N:
-    sumprobred += ((N - Rsubtract)/N)
+    sumprobred += (((N - Rsubtract)/N)**2)
+    print((N - Rsubtract)/N)
     Rruns += 1
     Rsubtract += 1
 
 while Gruns < N:
-    sumprobgreen += ((N - Gsubtract)/N)
+    sumprobgreen += (((N - Gsubtract)/N)**2)
     Gruns += 1
     Gsubtract += 1
-print((sumprobred/N)**2,sumprobgreen)
-print((sumprobred/N)**2 + (sumprobgreen/N)**2)
+
+print((sumprobred/N) + (sumprobgreen/N))
 
 """Nsubtract1 = 0
 sumProbability = 0
