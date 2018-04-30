@@ -67,6 +67,39 @@ while runs1 <= 1000:
     runs1 += 1
 print(wins1)"""
 
+"""N = 10
+W = 10
+wins2 = 0
+runs2 = 0
+while runs2 <= 1000:
+    red2 = randint(0,N)
+    green2 = N - red2
+    
+    marbleList2 = []
+    item4 = 0
+    while item4 < green2:
+        marbleList2.append(2)
+        item4 += 1
+        
+    item5 = 0
+    while item5 < red2:
+        marbleList2.append(1)
+        item5 += 1
+    
+    guess2 = marbleList2[randint(0,N-1)]
+    guess3 = marbleList2[randint(0,N-1)]
+    if guess2 == guess3:
+        finalGuess = guess2
+    elif guess2 != guess3:
+        finalGuess = marbleList2[randint(0,N-1)]
+    marblePicked2 = marbleList2[randint(0,N-1)]
+    
+    if finalGuess == marblePicked2:
+        wins2 += 1
+
+    runs2 += 1
+print(wins2)"""
+
 N = 10
 W = 10
 wins2 = 0
