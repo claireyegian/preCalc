@@ -25,7 +25,7 @@ while Nsubtract < N:
     Nsubtract += 1
 print((sumNValues/N)*W)"""
 
-N = 10
+N = 5
 W = 10
 sumprobred = 0
 sumprobgreen = 0
@@ -35,16 +35,14 @@ Gruns = 0
 Gsubtract = 0
 while Rruns < N:
     sumprobred += ((N - Rsubtract)/N)
-    print ((N - Rsubtract)/N)
     Rruns += 1
     Rsubtract += 1
 
 while Gruns < N:
     sumprobgreen += ((N - Gsubtract)/N)
-    print (N - Gsubtract)
     Gruns += 1
     Gsubtract += 1
-
+print((sumprobred/N)**2,sumprobgreen)
 print((sumprobred/N)**2 + (sumprobgreen/N)**2)
 
 """Nsubtract1 = 0
