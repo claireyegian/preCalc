@@ -39,7 +39,7 @@ while runs <= 1000:
 print(wins)"""
 
 
-N = 10
+N = 8
 W = 10
 wins1 = 0
 runs1 = 0
