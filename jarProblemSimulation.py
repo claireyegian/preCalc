@@ -39,11 +39,11 @@ while runs <= 1000:
 print(wins)"""
 
 
-N = 20
+N = 10
 W = 10
 wins1 = 0
 runs1 = 0
-while runs1 <= 100:
+while runs1 <= 1000:
     red1 = randint(0,N)
     green1 = N - red1
     
@@ -57,15 +57,12 @@ while runs1 <= 100:
     while item3 < red1:
         marbleList1.append(1)
         item3 += 1
-    print(marbleList1, len(marbleList1))
     
     guess1 = marbleList1[randint(0,N-1)]
     marblePicked1 = marbleList1[randint(0,N-1)]
     
     if guess1 == marblePicked1:
         wins1 += 1
-    print(guess1, marblePicked1)
-    print(wins1)
 
     runs1 += 1
 print(wins1)
