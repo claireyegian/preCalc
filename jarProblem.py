@@ -36,10 +36,12 @@ Gsubtract = 0
 while Rruns < red:
     sumprobred += ((red - Rsubtract)/N)
     Rruns += 1
+    Rsubtract += 1
 
 while Gruns < green:
     sumprobgreen += ((green - Gsubtract)/N)
     Gruns += 1
+    Gsubtract += 1
 
 print(((sumprobred)**2 + (sumprobgreen)**2))
 
