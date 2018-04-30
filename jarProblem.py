@@ -25,30 +25,27 @@ while Nsubtract < N:
     Nsubtract += 1
 print((sumNValues/N)*W)"""
 
-N = 10
+N = 20
 W = 10
 sumprobred = 0
 sumprobgreen = 0
-red = randint(0,N)
-green = N - red
-print (red,green)
 Rruns = 0
 Rsubtract = 0
 Gruns = 0
 Gsubtract = 0
-while Rruns < red:
-    sumprobred += ((red - Rsubtract)/N)
-    print (red - Rsubtract)
+while Rruns < N:
+    sumprobred += ((N - Rsubtract)/N)
+    print ((N - Rsubtract)/N)
     Rruns += 1
     Rsubtract += 1
 
-while Gruns < green:
-    sumprobgreen += ((green - Gsubtract)/N)
-    print (green - Gsubtract)
+while Gruns < N:
+    sumprobgreen += ((N - Gsubtract)/N)
+    print (N - Gsubtract)
     Gruns += 1
     Gsubtract += 1
 
-print(((sumprobred)**2 + (sumprobgreen)**2))
+print(((sumprobred/N)**2 + (sumprobgreen/N)**2))
 
 """Nsubtract1 = 0
 sumProbability = 0
