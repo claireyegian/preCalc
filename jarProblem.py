@@ -25,7 +25,7 @@ while Nsubtract < N:
     Nsubtract += 1
 print((sumNValues/N)*W)"""
 
-#Strategy 3: pay P above D
+"""#Strategy 3: pay P above D
 N = 10
 W = 10
 sumprobred = 0
@@ -45,7 +45,7 @@ while Gruns < N:
     Gruns += 1
     Gsubtract += 1
 
-print((sumprobred/N) + (sumprobgreen/N))
+print((sumprobred/N) + (sumprobgreen/N))"""
 
 """#Strategy 4: pay R above D
 N = 10
@@ -61,3 +61,25 @@ for item in marbleList:
     green = item[1]
     sumProb += ((red/N)**3 + (green/N)**3 + 2*(((red/N)**3)*(green/N)) + 2*(((red/N)**3)*(green/N)))
 print(sumProb/(N + 1))"""
+
+#Strategy 5: pay S above D
+N = 10
+W = 10
+marbleList = []
+runs = 0
+while runs <= N:
+    marbleList.append([runs, N - runs])
+    runs += 1
+sumProb = 0
+for item in marbleList:
+    red = item[0]
+    green = item[1]
+    if red >= 3 and green >= 3:
+        sumProb += (((red/N)*((red-1)/(N-1))*((red-2)/(N-2))) + ((green/N)*((green-1)/(N-1))*((green-2)/(N-2))) + 2*((red/N)*((red-1)/(N-1))*((red-2)/(N-2)))(green/(N-3))) + 2*((green/N)*((green-1)/(N-1))*((green-2)/(N-2)))(red/(N-3)))
+print(sumProb/(N + 1))
+
+
+
+
+
+
