@@ -119,8 +119,18 @@ while r5uns <= 1000:
         m5arbleList.append(1)
         i2tem += 1
     
-    g1uess = m5arbleList[randint(0,N-1)]
-    g2uess = m5arbleList[randint(0,N-1)]
+    def numGuess():
+        return(randint(0,N-1))
+    
+    numGuess1 = numGuess()
+    g1uess = m5arbleList[numGuess1]
+    numGuess2 = randint(0,N-1)
+    if numGuess2 == numGuess1:
+        while numGuess2 == numGuess1:
+            numGuess()
+        numGuess2 = numGuess()
+    
+    g2uess = m5arbleList[numGuess2]
     if g1uess == g2uess:
         f5inalGuess = g1uess
     elif g1uess != g2uess:
