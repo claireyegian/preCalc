@@ -102,33 +102,33 @@ print(wins2)"""
 
 N = 10
 W = 10
-wins2 = 0
-runs2 = 0
-while runs2 <= 1000:
-    red2 = randint(0,N)
-    green2 = N - red2
+w5ins = 0
+r5uns = 0
+while r5uns <= 1000:
+    r5ed = randint(0,N)
+    g5reen = N - r5ed
     
-    marbleList2 = []
-    item4 = 0
-    while item4 < green2:
-        marbleList2.append(2)
-        item4 += 1
+    m5arbleList = []
+    i1tem = 0
+    while i1tem < g5reen:
+        m5arbleList.append(2)
+        i1tem += 1
         
-    item5 = 0
-    while item5 < red2:
-        marbleList2.append(1)
-        item5 += 1
+    i2tem = 0
+    while i2tem < r5ed:
+        m5arbleList.append(1)
+        i2tem += 1
     
-    guess2 = marbleList2[randint(0,N-1)]
-    guess3 = marbleList2[randint(0,N-1)]
-    if guess2 == guess3:
-        finalGuess = guess2
-    elif guess2 != guess3:
-        finalGuess = marbleList2[randint(0,N-1)]
-    marblePicked2 = marbleList2[randint(0,N-1)]
+    g1uess = m5arbleList[randint(0,N-1)]
+    g2uess = m5arbleList[randint(0,N-1)]
+    if g1uess == g2uess:
+        f5inalGuess = g1uess
+    elif g1uess != g2uess:
+        f5inalGuess = m5arbleList[randint(0,N-1)]
+    m5arblePicked = m5arbleList[randint(0,N-1)]
     
-    if finalGuess == marblePicked2:
-        wins2 += 1
+    if f5inalGuess == m5arblePicked:
+        w5ins += 1
 
-    runs2 += 1
-print(wins2)
+    r5uns += 1
+print(w5ins)
