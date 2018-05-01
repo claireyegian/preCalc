@@ -53,4 +53,5 @@ marbleList = []
 runs = 0
 while runs <= N:
     marbleList.append([runs, N - runs])
+    runs += 1
 print(marbleList)
