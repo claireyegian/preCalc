@@ -34,17 +34,17 @@ Rsubtract = 0
 Gruns = 0
 Gsubtract = 0
 while Rruns < N:
-    sumprobred += (((N - Rsubtract)/N)**2)
+    sumprobred += ((N - Rsubtract)/N)
     print((N - Rsubtract)/N)
     Rruns += 1
     Rsubtract += 1
 
 while Gruns < N:
-    sumprobgreen += (((N - Gsubtract)/N)**2)
+    sumprobgreen += ((N - Gsubtract)/N)
     Gruns += 1
     Gsubtract += 1
 
-print((sumprobred/N) + (sumprobgreen/N))
+print((sumprobred/N)**2 + (sumprobgreen/N)**2)
 
 """Nsubtract1 = 0
 sumProbability = 0
