@@ -54,4 +54,8 @@ runs = 0
 while runs <= N:
     marbleList.append([runs, N - runs])
     runs += 1
+sumProb = 0
+for item in marbleList:
+    sumProb += (item[0]**3 + item[1]**3 + 2((item[0]**3)*item[1]) + 2((item[1]**3)*item[0]))
+    print(item[0]**3 + item[1]**3 + 2((item[0]**3)*item[1]) + 2((item[1]**3)*item[0]))
 print(marbleList)
