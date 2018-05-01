@@ -4,7 +4,7 @@
 
 from random import randint
 
-"""#Strategy 1: Guess red
+"""#Strategies 1 and 2: Guess red/green
 N = int(input('Enter the number of marbles: '))
 W = int(input('Enter the monetary prize: '))
 
@@ -25,6 +25,7 @@ while Nsubtract < N:
     Nsubtract += 1
 print((sumNValues/N)*W)"""
 
+"""#Strategy 3: pay P above D
 N = 10
 W = 10
 sumprobred = 0
@@ -44,12 +45,12 @@ while Gruns < N:
     Gruns += 1
     Gsubtract += 1
 
-print((sumprobred/N)**2 + (sumprobgreen/N)**2)
+print((sumprobred/N)**2 + (sumprobgreen/N)**2)"""
 
-"""Nsubtract1 = 0
-sumProbability = 0
-while Nsubtract1 < N:
-    sumProbability += ((Nsubtract1/N)^2 + (((Nsubtract1/N)^2)*(N - Nsubtract1)/N))
-    Nsubtract1 += 1
-
-print(sumProbability)"""
+N = 10
+W = 10
+marbleList = []
+runs = 0
+while runs <= N:
+    marbleList.append([runs, N - runs])
+print(marbleList)
