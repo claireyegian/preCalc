@@ -84,7 +84,7 @@ for item in marbleList:
         sumProb += (((red/N)*((red-1)/(N-1))*((red-2)/(N-2))) + ((red/N)*((green)/(N-1))*((red-1)/(N-2))*((red-2)/(N-3))) + ((green/N)*(red/(N-1))*((red-1)/(N-2))*((red-2)/(N-3))))
     elif red <1:
         sumProb += ((red/N)*((red-1)/(N-1))*((red-2)/(N-2)))
-print(sumProb)
+print(sumProb/(N-1))
 
 
 
