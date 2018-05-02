@@ -81,9 +81,9 @@ for item in marbleList:
     elif red <1:
         sumProb += ((green/N)*((green-1)/(N-1))*((green-2)/(N-2)))
     elif green < 3 and green >= 1:
-        sumProb += (((green/N)*((green-1)/(N-1))*((green-2)/(N-2))) + ((red/N)*((green)/(N-1))*((green-1)/(N-2))*((green-2)/(N-3))) + ((green/N)*(red/(N-1))*((green-1)/(N-2))*((green-2)/(N-3))))
+        sumProb += (((red/N)*((red-1)/(N-1))*((red-2)/(N-2))) + ((red/N)*((green)/(N-1))*((red-1)/(N-2))*((red-2)/(N-3))) + ((green/N)*(red/(N-1))*((red-1)/(N-2))*((red-2)/(N-3))))
     elif red <1:
-        sumProb += ((green/N)*((green-1)/(N-1))*((green-2)/(N-2)))
+        sumProb += ((red/N)*((red-1)/(N-1))*((red-2)/(N-2)))
 print(sumProb)
 
 
