@@ -4,7 +4,7 @@
 
 from random import randint
 
-#Strategy 1: Guess red
+#Exact value
 N = int(input('Enter the number of marbles: '))
 W = int(input('Enter the monetary prize: '))
 
@@ -15,7 +15,9 @@ while subtractN <= N:
     subtractN += 1
 
 print('The game will cost',sumValues/(N + 1),'dollars to play if you guess red')
+print('D equals',sumValues/(N + 1))
 
+#Simulation
 guess = input('Enter your guess (red or green): ')
 if guess == 'red':
     guess = 1
