@@ -1,10 +1,9 @@
 #Claire Yegian and Lea Adams-Blackmore
 #4/23/18
-#jarProblem.py - calculates fair costs for different strategies of jar game
+#strategy1.py - finds exact value for D and creates simulation for strategy 1 (guess red)
 
 from random import randint
 
-#Exact value
 N = int(input('Enter the number of marbles: '))
 W = int(input('Enter the monetary prize: '))
 
@@ -15,15 +14,10 @@ while subtractN <= N:
     subtractN += 1
 
 print('The game will cost',sumValues/(N + 1),'dollars to play if you guess red')
-print('D equals',sumValues/(N + 1))
+print('D equals $',sumValues/(N + 1))
 
 #Simulation
-guess = input('Enter your guess (red or green): ')
-if guess == 'red':
-    guess = 1
-elif guess == 'green':
-    guess = 2
-
+guess = 1
 runs = 0
 wins = 0
 while runs <= 1000:
@@ -48,4 +42,4 @@ while runs <= 1000:
         wins += 1
     runs += 1
 
-print(wins)
+print('You won',wins,'times out of 1000 or',wins/10,'percent of the time.')
