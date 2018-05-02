@@ -60,5 +60,4 @@ while r5uns <= 1000:
         w5ins += 1
 
     r5uns += 1
-
 print('You won',w5ins,'times out of 1000 or',w5ins/10,'percent of the time.')
