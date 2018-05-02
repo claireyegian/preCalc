@@ -43,4 +43,4 @@ while runs <= 1000:
         wins += 1
     runs += 1
 
-print(wins)
+print('You won',wins,'times out of 1000 or',wins/10,'percent of the time.')
