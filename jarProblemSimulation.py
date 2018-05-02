@@ -104,7 +104,7 @@ N = 10
 W = 10
 w5ins = 0
 r5uns = 0
-while r5uns <= 1:
+while r5uns <= 1000:
     r5ed = randint(0,N)
     g5reen = N - r5ed
     
@@ -118,7 +118,6 @@ while r5uns <= 1:
     while i2tem < r5ed:
         m5arbleList.append(1)
         i2tem += 1
-    print(m5arbleList)
     
     g1uess = m5arbleList[randint(0,2)]
     
