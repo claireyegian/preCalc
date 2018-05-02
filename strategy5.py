@@ -26,8 +26,8 @@ for item in marbleList:
         sumProb += (((red/N)*((red-1)/(N-1))*((red-2)/(N-2))) + ((red/N)*((green)/(N-1))*((red-1)/(N-2))*((red-2)/(N-3))) + ((green/N)*(red/(N-1))*((red-1)/(N-2))*((red-2)/(N-3))))
     elif red <1:
         sumProb += ((red/N)*((red-1)/(N-1))*((red-2)/(N-2)))
-print('You will pay',(sumProb/(N-1))*W - (W/2),'dollars extra.')
-print('P equals $',(sumProb/(N-1))*W - (W/2),', and D equals $',(W/2))
+print('You will pay',(sumProb/N)*W - (W/2),'dollars extra.')
+print('P equals $',(sumProb/N)*W - (W/2),', and D equals $',(W/2))
 
 #Simulation
 w5ins = 0
