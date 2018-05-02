@@ -104,7 +104,7 @@ N = 10
 W = 10
 w5ins = 0
 r5uns = 0
-while r5uns <= 1000:
+while r5uns <= 1:
     r5ed = randint(0,N)
     g5reen = N - r5ed
     
@@ -118,23 +118,15 @@ while r5uns <= 1000:
     while i2tem < r5ed:
         m5arbleList.append(1)
         i2tem += 1
+    print(m5arbleList)
     
-    def numGuess():
-        return(randint(0,N-1))
+    g1uess = m5arbleList[randint(0,2)]
     
-    numGuess1 = numGuess()
-    g1uess = m5arbleList[numGuess1]
-    numGuess2 = randint(0,N-1)
-    if numGuess2 == numGuess1:
-        while numGuess2 == numGuess1:
-            numGuess()
-        numGuess2 = numGuess()
-    
-    g2uess = m5arbleList[numGuess2]
+    g2uess = m5arbleList[randint(6,9)]
     if g1uess == g2uess:
         f5inalGuess = g1uess
     elif g1uess != g2uess:
-        f5inalGuess = m5arbleList[randint(0,N-1)]
+        f5inalGuess = m5arbleList[randint(3,5)]
     m5arblePicked = m5arbleList[randint(0,N-1)]
     
     if f5inalGuess == m5arblePicked:
