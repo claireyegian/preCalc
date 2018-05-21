@@ -13,8 +13,10 @@ while subtractN <= N:
     sumValues += (((N - subtractN)/N)*W)
     subtractN += 1
 
+print(' ')
+print('Theoretical:')
 print('The game will cost',sumValues/(N + 1),'dollars to play if you guess red.')
-print('D equals $',sumValues/(N + 1))
+print('D equals $',sumValues/(N + 1),'(',((sumValues/(N + 1))/W)*100,'% of the monetary prize)')
 
 #Simulation
 guess = 1
@@ -42,4 +44,6 @@ while runs <= 1000:
         wins += 1
     runs += 1
 
+print(' ')
+print('Simulation:')
 print('You won',wins,'times out of 1000 or',wins/10,'percent of the time.')
