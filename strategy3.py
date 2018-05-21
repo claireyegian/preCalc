@@ -22,9 +22,13 @@ while Gruns < N:
     sumprobgreen += (((N - Gsubtract)/N)**2)
     Gruns += 1
     Gsubtract += 1
+P = ((sumprobred/N) + (sumprobgreen/N))*W - (W/2)
+D = (W/2)
 
+print(' ')
+print('Theoretical: ')
 print('You will pay',((sumprobred/N) + (sumprobgreen/N))*W - (W/2),'dollars extra.')
-print('P equals $',((sumprobred/N) + (sumprobgreen/N))*W - (W/2),', and D equals $',(W/2))
+print('P equals $',P,', and D equals $',D, 'The total cost is', (P + D) , 'or', ((P + D)/W)*100, 'percent of the total monetary prize')
 
 #Simulation
 wins1 = 0
@@ -51,4 +55,7 @@ while runs1 <= 1000:
         wins1 += 1
 
     runs1 += 1
+
+print(' ')
+print('Simulation: ')
 print('You won',wins1,'times out of 1000, or',(wins1/10),'percent of the time')
