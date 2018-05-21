@@ -26,8 +26,13 @@ for item in marbleList:
         sumProb += (((red/N)*((red-1)/(N-1))*((red-2)/(N-2))) + ((red/N)*((green)/(N-1))*((red-1)/(N-2))*((red-2)/(N-3))) + ((green/N)*(red/(N-1))*((red-1)/(N-2))*((red-2)/(N-3))))
     elif red <1:
         sumProb += ((red/N)*((red-1)/(N-1))*((red-2)/(N-2)))
+S = (sumProb/N)*W - (W/2)
+D = (W/2)
+
+print(' ')
+print('Theoretical: ')
 print('You will pay',(sumProb/N)*W - (W/2),'dollars extra.')
-print('P equals $',(sumProb/N)*W - (W/2),', and D equals $',(W/2))
+print('S equals $',S,', and D equals $',D, 'The total cost is $', (S + D), 'or', ((S + D)/W)*100, 'percent of the total monetary prize')
 
 #Simulation
 w5ins = 0
@@ -60,4 +65,7 @@ while r5uns <= 1000:
         w5ins += 1
 
     r5uns += 1
+
+print(' ')
+print('Simulation: ')
 print('You won',w5ins,'times out of 1000 or',w5ins/10,'percent of the time.')
