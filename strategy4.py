@@ -16,7 +16,7 @@ sumProb = 0
 for item in marbleList:
     red = item[0]
     green = item[1]
-    sumProb += ((red/N)**3 + (green/N)**3 + 2*(((red/N)**3)*(green/N)) + 2*(((red/N)**3)*(green/N)))
+    sumProb += ((red/N)**3 + (green/N)**3 + 2*(((red/N)**3)*(green/N)) + 2*(((green/N)**3)*(red/N)))
 R = (sumProb/(N + 1))*W - (W/2)
 D = (W/2)
 
